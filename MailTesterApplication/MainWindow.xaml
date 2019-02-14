@@ -1,0 +1,19 @@
+﻿<Window x:Class="GreenCoypu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="600">
+    <Grid>
+        <Label x:Name="label1" Content="MAIL TESTER" FontSize="15" HorizontalAlignment="Left" Height="31" Margin="264,20,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label x:Name="label2" Content="MAIL SERVER AND PORT" HorizontalAlignment="Left" Height="25" Margin="40,80,0,0" VerticalAlignment="Top" Width="146"/>
+        <Label x:Name="label3" Content="TO" HorizontalAlignment="Left" Height="25" Margin="40,120,0,0" VerticalAlignment="Top" Width="146"/>
+        <Label x:Name="label4" Content="FROM" HorizontalAlignment="Left" Height="25" Margin="40,160,0,0" VerticalAlignment="Top" Width="146"/>
+        <TextBox x:Name="serverTb" HorizontalAlignment="Left" Height="25" Margin="220,80,0,0" TextWrapping="Wrap" Text="webmail.domain.com" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="portTb" HorizontalAlignment="Left" Height="25" Margin="440,80,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="40" />
+        <TextBox x:Name="toTb" HorizontalAlignment="Left" Height="25" Margin="220,120,0,0" TextWrapping="Wrap" Text="example@to.com" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="fromTb" HorizontalAlignment="Left" Height="25" Margin="220,160,0,0" TextWrapping="Wrap" Text="example@from.com" VerticalAlignment="Top" Width="200" TextChanged="FromTb_TextChanged"/>
+        <Button x:Name="button" Content="BEGIN TEST" HorizontalAlignment="Left" Margin="40,240,0,0" VerticalAlignment="Top" Width="520" Height="45" Click="button_Click"/>
+    </Grid>
+</Window>
